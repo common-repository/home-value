@@ -1,0 +1,37 @@
+#test_api_key_result {margin: 10px 0;display: block}
+#home_values_adjust_values {width: 100%; max-width: 400px}
+.settings_page_home_values .postbox {max-width: 260px; padding: 5px 10px 0; border-radius: 5px; box-shadow: 0 0; border-color: #888;}
+
+
+.hv-loading::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 9999;
+}
+
+.hv-loading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  margin-left: -25px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #1e90ff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  z-index: 10000;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
